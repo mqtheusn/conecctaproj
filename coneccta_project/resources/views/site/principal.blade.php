@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HireMatch</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{asset('/css/style.css')}}">
 </head>
 <body>
     <!--header-->
     <header>
         <nav>
-            <a href="/">Sobre</a>
-            <a href="/telas">Telas</a>
+            <a href="{{route ('principal')}}">Sobre</a>
+            <a href="{{route ('screen')}}">Telas</a>
             <a href="">Info</a>
         </nav>
     </header>
@@ -88,6 +88,6 @@
         
         <div class="tempo"></div>
     </div>
-    <script src="app.js"></script>
+    <script src="{{asset('/js/app.js')}}"></script>
 </body>
 </html>

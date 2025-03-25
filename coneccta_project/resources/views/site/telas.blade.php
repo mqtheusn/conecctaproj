@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telas</title>
-    <link rel="stylesheet" type="text/css" media="screen" href=".../css/int.css">
+    <link rel="stylesheet"  href="{{asset('/css/int.css')}}">
 </head>
 <body>
     <header>
         <nav>
-            <a href="/">Sobre</a>
-            <a href="/telas">Telas</a>
+            <a href="{{route ('principal')}}">Sobre</a>
+            <a href="{{route ('screen')}}">Telas</a>
             <a href="">Info</a>
         </nav>
     </header>
@@ -27,8 +27,8 @@
     <img class="image" src="./images/img7.jpg" draggable="false">
     <img class="image" src="./images/img8.jpg" draggable="false">
 
-    <script src="coneccta_project\resources\css\int.css"></script>
+    <script src="{{asset('/js/int.js')}}"></script>
 </div>
-    <script src="coneccta_project\resources\css\app.css"></script>
+    <script src="{{asset('/js/app.js')}}"></script>
 </body>
 </html>
